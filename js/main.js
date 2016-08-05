@@ -43,6 +43,10 @@ $(document).on('ready', function(){
         minlength: 3,
         digits: true
       },
+      "comments": {
+        required: false,
+        maxlength: 500
+      }
     }
   });
 $('label span-glyphicon').tooltip();
