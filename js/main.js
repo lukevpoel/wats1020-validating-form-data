@@ -1,9 +1,12 @@
 // Create a document ready handler.
 $(document).on('ready', function(){
+  //starting the function to validate the form
   $('#order-form').validate({
+    //submits the form if the rules are followed
     submitHandler:function(form){
       form.submit();
     },
+    //list of rules tied to id for what is acceptable in the form.
     rules: {
       "your-name": {
         required: true,
@@ -49,9 +52,8 @@ $(document).on('ready', function(){
       }
     }
   });
+  //pulls in the tips for if something isn't validated right.
 $('label span-glyphicon').tooltip();
 });
-// 2. Define a validation object for use on your page.
-// 3. Connect the validation object to an event handler tied to the submit button.
 
 // Refer to the `index.html` file for the validation rules that must be enforced.
